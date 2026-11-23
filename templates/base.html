@@ -2,13 +2,38 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>sakanate</title>
+        <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}">
+        <title>{% block title %}sakanate{% endblock title %}</title>
     </head>
     <body>
-        <section class="section">
-            <div class="container">
-                {% block content %} {% endblock content %}
-            </div>
-        </section>
+        <header>
+            <nav>
+                <a href="/" class="title">Kento "sakanate" Maruyama</a>
+                <a href="/about">About</a>
+                <a href="/bookmarks">Bookmarks</a>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %} {% endblock content %}
+        </main>
+
+        <footer>
+            <p>
+                <a href="mailto:kento.m@indiff.io">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <use href="{{ get_url(path='icons/mail.svg') }}#mail"></use>
+                    </svg>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://github.com/sakanate">
+                    <svg class="icon" viewBox="0 0 98 96" aria-hidden="true">
+                        <use href="{{ get_url(path='icons/github.svg') }}#github"></use>
+                    </svg>
+                    <span>sakanate</span>
+                </a>
+            </p>
+        </footer>
     </body>
 </html>
