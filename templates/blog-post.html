@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 
+{% block title %}{{ page.title }}{% endblock title %}
+
 {% block content %}
-<h1 class="title">
-    {{ page.title }}
-</h1>
+<section>
+    <h1 class="accent" style="margin-top: 1.5rem;">
+        {{ page.title }}
+    </h1>
+    <p style="color: #555555; margin-bottom: 1.1rem;">{{ page.date }}</p>
 
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-
-{{ page.content | safe }}
+    {{ page.content | safe }}
+</section>
 {% endblock content %}

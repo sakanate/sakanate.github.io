@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+.accent {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
 html {
     background-color: #f5f4f2;
 }
@@ -35,14 +41,10 @@ header {
         text-decoration-thickness: 3px;
         text-underline-offset: 4px;
     }
-    & .title {
-        flex-grow: 2;
-        font-weight: 550;
-    }
 }
 
 main {
-    flex-grow: 1;
+    flex: 1;
 }
 
 .post-list {

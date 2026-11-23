@@ -2,13 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}">
         <title>{% block title %}sakanate{% endblock title %}</title>
     </head>
     <body>
         <header>
             <nav>
-                <a href="/" class="title">Kento "sakanate" Maruyama</a>
+                <a href="/" style="flex: 1; font-weight: bold;">Kento "sakanate" Maruyama</a>
                 <a href="/about">About</a>
                 <a href="/bookmarks">Bookmarks</a>
             </nav>
