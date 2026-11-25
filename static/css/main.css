@@ -56,6 +56,33 @@ main {
     }
 }
 
+article {
+    font-size: 1rem;
+    padding-bottom: 32px;
+    & header {
+        margin-top: 32px;
+        margin-bottom: 24px;
+        & h1 {
+            text-decoration: underline;
+            text-decoration-color: #D34516;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 4px;
+        }
+    }
+    & p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    & h2 {
+        margin-top: 38px;
+        margin-bottom: 14px;
+    }
+    & h3 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+}
+
 footer {
     margin: 2rem 0 0.5rem;
     font-size: 1.2rem;
